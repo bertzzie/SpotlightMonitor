@@ -14,7 +14,7 @@ Current achieved state:
 
 This is the to-do list to achieve the next state that I want:
 
-[] Function and type documentation
-[] Unit test
-[] UI test
-[] Listen to power / io event so battery state, capacity, etc can update dynamically and respond to changing state
+- [ ] Function and type documentation
+- [ ] Unit test
+- [ ] UI test
+- [ ] Listen to power / io event so battery state, capacity, etc can update dynamically and respond to changing state
