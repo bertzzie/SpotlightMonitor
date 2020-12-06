@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C2CF24962E28D5720E3CCFA /* BatteryStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CF2DCB5232E53F976E0A5 /* BatteryStatView.swift */; };
+		6C2CF322286618ED2176C11A /* SpotlightMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CF3AFEFA0278E397BA89A /* SpotlightMonitorUITests.swift */; };
+		6C2CF38E65B5C2D297834F16 /* SpotlightMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CFC4744D72BF722AEB992 /* SpotlightMonitorTests.swift */; };
+		6C2CF592D8DA3867DBDBBDC7 /* IOHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CFC285FD75B652AEE472D /* IOHelpers.swift */; };
+		6C2CF703E1C6491AE4CD7F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2CFB0DEFC23585C6A5FBCB /* Main.storyboard */; };
+		6C2CF70B3BA8CADBE46202A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CF4B9D1628E9509CAE74F /* AppDelegate.swift */; };
+		6C2CF78FD5AA6A89F3398C1B /* BatteryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CF795ABE025BD2BB58CD6 /* BatteryInfo.swift */; };
+		6C2CF7DED68C6A5675FE9651 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CFED7E089B827F6B032C7 /* Errors.swift */; };
+		6C2CF82080ABF88B16FA26C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C2CF316CFAB1B8EECABC782 /* Assets.xcassets */; };
+		6C2CF888115661B6A8D778FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C2CF97DEF97687D855EDB4F /* Preview Assets.xcassets */; };
+		6C2CF8F2D25BAB9EDAEDBE20 /* BatteryCapacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CF3841564F290F24DCEF9 /* BatteryCapacity.swift */; };
+		6C2CF9A2ABDB9BD559E1B135 /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CF43618FA3B259380AFC2 /* TimeFormatter.swift */; };
+		6C2CFA64588706E8D1E0B595 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CFB87EB00B06C13540B44 /* README.md */; };
+		6C2CFFC3A7591A56EB1E4BD4 /* BatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CF3D2103419EC9E7EE375 /* BatteryService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C2CFDB4CAB49677DC3B0F67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C2CFE8AE3B6D569FD6D865C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C2CF1252761B05E76B7D905;
+			remoteInfo = SpotlightMonitor;
+		};
+		6C2CFFD7C718AAC7D93B690C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C2CFE8AE3B6D569FD6D865C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C2CF1252761B05E76B7D905;
+			remoteInfo = SpotlightMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C2CF08FFD375BEFF94F976A /* SpotlightMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpotlightMonitor.entitlements; sourceTree = "<group>"; };
+		6C2CF199D865DA3ECE61DE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C2CF2DCB5232E53F976E0A5 /* BatteryStatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryStatView.swift; sourceTree = "<group>"; };
+		6C2CF2DD54EF8CDDC6E96EEA /* SpotlightMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotlightMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2CF316CFAB1B8EECABC782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C2CF3841564F290F24DCEF9 /* BatteryCapacity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryCapacity.swift; sourceTree = "<group>"; };
+		6C2CF3AFEFA0278E397BA89A /* SpotlightMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightMonitorUITests.swift; sourceTree = "<group>"; };
+		6C2CF3D2103419EC9E7EE375 /* BatteryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryService.swift; sourceTree = "<group>"; };
+		6C2CF43618FA3B259380AFC2 /* TimeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		6C2CF4B9D1628E9509CAE74F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C2CF690BA591E135BF56CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		6C2CF763B414891163B6C576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		6C2CF786CF2C5BD73FE4A7F4 /* SpotlightMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotlightMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2CF795ABE025BD2BB58CD6 /* BatteryInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryInfo.swift; sourceTree = "<group>"; };
+		6C2CF97DEF97687D855EDB4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C2CFB87EB00B06C13540B44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6C2CFBCC232806783DCFE3A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		6C2CFC285FD75B652AEE472D /* IOHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOHelpers.swift; sourceTree = "<group>"; };
+		6C2CFC4744D72BF722AEB992 /* SpotlightMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightMonitorTests.swift; sourceTree = "<group>"; };
+		6C2CFED7E089B827F6B032C7 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		6C2CFEF515C3251BBFC3348B /* SpotlightMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotlightMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C2CF237EE31957BED766D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C2CF7ACEA797ABD69482069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C2CF89D8005D9E43465C775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C2CF05BC0FFEB0A32FE8794 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CF97DEF97687D855EDB4F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C2CF171732914DB55BDE5B1 /* SpotlightMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CFBCC232806783DCFE3A9 /* Info.plist */,
+				6C2CF316CFAB1B8EECABC782 /* Assets.xcassets */,
+				6C2CF08FFD375BEFF94F976A /* SpotlightMonitor.entitlements */,
+				6C2CF4B9D1628E9509CAE74F /* AppDelegate.swift */,
+				6C2CFB0DEFC23585C6A5FBCB /* Main.storyboard */,
+				6C2CF05BC0FFEB0A32FE8794 /* Preview Content */,
+				6C2CF6D2974040567A65EAB6 /* Model */,
+				6C2CFD8767F8A88E4A9800CF /* Service */,
+				6C2CF6B285D46C55D75FB12B /* Helpers */,
+				6C2CF40C31E45BE4DC694756 /* Views */,
+				6C2CFE1EDB54BCBFE938FA22 /* Components */,
+			);
+			path = SpotlightMonitor;
+			sourceTree = "<group>";
+		};
+		6C2CF3D53694BA1B05DF4505 = {
+			isa = PBXGroup;
+			children = (
+				6C2CF985460CD22B28D06B41 /* Products */,
+				6C2CF171732914DB55BDE5B1 /* SpotlightMonitor */,
+				6C2CFDB1B844B2FB8C80A917 /* SpotlightMonitorTests */,
+				6C2CFCDAEFD555983B088932 /* SpotlightMonitorUITests */,
+				6C2CFB87EB00B06C13540B44 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		6C2CF40C31E45BE4DC694756 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CF2DCB5232E53F976E0A5 /* BatteryStatView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C2CF6B285D46C55D75FB12B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CFC285FD75B652AEE472D /* IOHelpers.swift */,
+				6C2CFED7E089B827F6B032C7 /* Errors.swift */,
+				6C2CF43618FA3B259380AFC2 /* TimeFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6C2CF6D2974040567A65EAB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CF795ABE025BD2BB58CD6 /* BatteryInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C2CF985460CD22B28D06B41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CF786CF2C5BD73FE4A7F4 /* SpotlightMonitor.app */,
+				6C2CF2DD54EF8CDDC6E96EEA /* SpotlightMonitorTests.xctest */,
+				6C2CFEF515C3251BBFC3348B /* SpotlightMonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C2CFCDAEFD555983B088932 /* SpotlightMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CF690BA591E135BF56CB4 /* Info.plist */,
+				6C2CF3AFEFA0278E397BA89A /* SpotlightMonitorUITests.swift */,
+			);
+			path = SpotlightMonitorUITests;
+			sourceTree = "<group>";
+		};
+		6C2CFD8767F8A88E4A9800CF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CF3D2103419EC9E7EE375 /* BatteryService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6C2CFDB1B844B2FB8C80A917 /* SpotlightMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CF763B414891163B6C576 /* Info.plist */,
+				6C2CFC4744D72BF722AEB992 /* SpotlightMonitorTests.swift */,
+			);
+			path = SpotlightMonitorTests;
+			sourceTree = "<group>";
+		};
+		6C2CFE1EDB54BCBFE938FA22 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CF3841564F290F24DCEF9 /* BatteryCapacity.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C2CF1252761B05E76B7D905 /* SpotlightMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C2CFBB386BA7E55D4E8BF55 /* Build configuration list for PBXNativeTarget "SpotlightMonitor" */;
+			buildPhases = (
+				6C2CF79D29992A25869C13C5 /* Sources */,
+				6C2CF7ACEA797ABD69482069 /* Frameworks */,
+				6C2CF7F88472D69B2187A099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotlightMonitor;
+			productName = SpotlightMonitor;
+			productReference = 6C2CF786CF2C5BD73FE4A7F4 /* SpotlightMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C2CF5D452D21DB7EA76C5E7 /* SpotlightMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C2CFA2C8866179136B9BBB8 /* Build configuration list for PBXNativeTarget "SpotlightMonitorTests" */;
+			buildPhases = (
+				6C2CFC8028065048A27BEAFC /* Sources */,
+				6C2CF237EE31957BED766D3B /* Frameworks */,
+				6C2CFA051533A7B65D937A93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C2CFBBA3C350B7145CF68A9 /* PBXTargetDependency */,
+			);
+			name = SpotlightMonitorTests;
+			productName = SpotlightMonitorTests;
+			productReference = 6C2CF2DD54EF8CDDC6E96EEA /* SpotlightMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C2CF9581B9FB1A085490CD0 /* SpotlightMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C2CF4B501F973C205068D54 /* Build configuration list for PBXNativeTarget "SpotlightMonitorUITests" */;
+			buildPhases = (
+				6C2CF80707A63529107C3628 /* Sources */,
+				6C2CF89D8005D9E43465C775 /* Frameworks */,
+				6C2CFD1773601AF2F9E46420 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C2CF96BAEEBEBBADA59338C /* PBXTargetDependency */,
+			);
+			name = SpotlightMonitorUITests;
+			productName = SpotlightMonitorUITests;
+			productReference = 6C2CFEF515C3251BBFC3348B /* SpotlightMonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C2CFE8AE3B6D569FD6D865C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 6C2CF57813CBE2EC78DA4813 /* Build configuration list for PBXProject "SpotlightMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 6C2CF3D53694BA1B05DF4505;
+			productRefGroup = 6C2CF985460CD22B28D06B41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C2CF1252761B05E76B7D905 /* SpotlightMonitor */,
+				6C2CF5D452D21DB7EA76C5E7 /* SpotlightMonitorTests */,
+				6C2CF9581B9FB1A085490CD0 /* SpotlightMonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C2CF7F88472D69B2187A099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2CF82080ABF88B16FA26C6 /* Assets.xcassets in Resources */,
+				6C2CF703E1C6491AE4CD7F35 /* Main.storyboard in Resources */,
+				6C2CF888115661B6A8D778FC /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C2CFA051533A7B65D937A93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C2CFD1773601AF2F9E46420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C2CF79D29992A25869C13C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2CF70B3BA8CADBE46202A1 /* AppDelegate.swift in Sources */,
+				6C2CF78FD5AA6A89F3398C1B /* BatteryInfo.swift in Sources */,
+				6C2CFFC3A7591A56EB1E4BD4 /* BatteryService.swift in Sources */,
+				6C2CF592D8DA3867DBDBBDC7 /* IOHelpers.swift in Sources */,
+				6C2CF7DED68C6A5675FE9651 /* Errors.swift in Sources */,
+				6C2CF24962E28D5720E3CCFA /* BatteryStatView.swift in Sources */,
+				6C2CF8F2D25BAB9EDAEDBE20 /* BatteryCapacity.swift in Sources */,
+				6C2CF9A2ABDB9BD559E1B135 /* TimeFormatter.swift in Sources */,
+				6C2CFA64588706E8D1E0B595 /* README.md in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C2CF80707A63529107C3628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2CF322286618ED2176C11A /* SpotlightMonitorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C2CFC8028065048A27BEAFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2CF38E65B5C2D297834F16 /* SpotlightMonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C2CF96BAEEBEBBADA59338C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C2CF1252761B05E76B7D905 /* SpotlightMonitor */;
+			targetProxy = 6C2CFFD7C718AAC7D93B690C /* PBXContainerItemProxy */;
+		};
+		6C2CFBBA3C350B7145CF68A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C2CF1252761B05E76B7D905 /* SpotlightMonitor */;
+			targetProxy = 6C2CFDB4CAB49677DC3B0F67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C2CFB0DEFC23585C6A5FBCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C2CF199D865DA3ECE61DE34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C2CF15281410E32EC708FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpotlightMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.namas.SpotlightMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SpotlightMonitor;
+			};
+			name = Release;
+		};
+		6C2CF69B81000AF999E68F99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpotlightMonitor/SpotlightMonitor.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SpotlightMonitor/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SpotlightMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.namas.SpotlightMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6C2CF78138967ABA5F40FDA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpotlightMonitor.app/Contents/MacOS/SpotlightMonitor";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpotlightMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.namas.SpotlightMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		6C2CF7BB9CC031C2ADE82A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C2CFA336EA643BFE842E497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpotlightMonitor.app/Contents/MacOS/SpotlightMonitor";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpotlightMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.namas.SpotlightMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		6C2CFD96BFD00DCA9D27C4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		6C2CFEFB52D975BF0FA399A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpotlightMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.namas.SpotlightMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SpotlightMonitor;
+			};
+			name = Debug;
+		};
+		6C2CFFA3E85A84BD46B8EBB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpotlightMonitor/SpotlightMonitor.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SpotlightMonitor/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SpotlightMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.namas.SpotlightMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C2CF4B501F973C205068D54 /* Build configuration list for PBXNativeTarget "SpotlightMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C2CFEFB52D975BF0FA399A8 /* Debug */,
+				6C2CF15281410E32EC708FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C2CF57813CBE2EC78DA4813 /* Build configuration list for PBXProject "SpotlightMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C2CF7BB9CC031C2ADE82A75 /* Debug */,
+				6C2CFD96BFD00DCA9D27C4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C2CFA2C8866179136B9BBB8 /* Build configuration list for PBXNativeTarget "SpotlightMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C2CF78138967ABA5F40FDA2 /* Debug */,
+				6C2CFA336EA643BFE842E497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C2CFBB386BA7E55D4E8BF55 /* Build configuration list for PBXNativeTarget "SpotlightMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C2CF69B81000AF999E68F99 /* Debug */,
+				6C2CFFA3E85A84BD46B8EBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C2CFE8AE3B6D569FD6D865C /* Project object */;
+}
